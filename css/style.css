@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url("../img/wallpaper\ doces.jpg");
+}
+
+ .container{
+    display: grid;
+    grid-template-columns: 1rf 2rf 1rf ;
+    grid-template-rows: repeat(5,200px);
+    gap: 10px;
+    grid-template-areas: 'title title title'
+                        '. result .'
+                        '. cartas .'
+                        '. cartas .'
+                        '. button.';
+ }
+ .result{
+    border-radius: 10px;
+    background-color: #E9F4F6;
+    display: flex;
+    grid-area: result;
+    justify-content: center;
+    align-items: center;
+ }
+  h1{
+    font-size: 70px;
+    padding-top: 5%;
+    grid-area: title;
+    text-align: center;
+  }
+  h2{
+    margin: 5%;
+    flex-direction: row;
+  }
+  .main{
+    position: relative;
+    grid-area: cartas;
+    display: flex;
+  }
+  .grid {
+    position: absolute;
+    padding: 10px;
+    justify-content: center;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /* Adicione suas regras de estilo aqui*/
+  #btn-reiniciar{
+    display: none;
+    grid-area: button;
+    justify-content: center;
+    align-content: center;
+  }
+
+  button{
+    width:40% ;
+    height:30% ;
+    border-radius:30px ;
+    background-color: rgb(#28d3c5);
+    justify-content: center;
+    align-items: center;
+  }
+  img{
+    height: 130px;
+     width: 130px;
+  }
+  
